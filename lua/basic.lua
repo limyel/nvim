@@ -16,11 +16,12 @@ vim.wo.colorcolumn = "80"
 -- 缩进4个空格等于一个Tab
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
+vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
 -- >> << 时移动长度
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
+vim.o.shiftwidth = 4
+vim.bo.shiftwidth = 4
 -- 空格替代tab
 vim.o.expandtab = true
 vim.bo.expandtab = true
@@ -79,3 +80,4 @@ vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
 
+vim.opt.list = false
