@@ -20,4 +20,21 @@ require("lazy").setup({
     { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
     { 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     { 'ahmedkhalf/project.nvim', name = "project" },
+    -- LSP
+    "williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
+    -- 补全
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/vim-vsnip",
+	"hrsh7th/cmp-vsnip",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
+	"mortepau/codicons.nvim",
+    -- 代码高亮，:TSInstall 命令安装
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    -- 格式化
+    { "nvimtools/none-ls.nvim", dependencies = "nvim-lua/plenary.nvim" },
 })
