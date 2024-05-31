@@ -159,6 +159,9 @@ pluginKeys.mapLSP = function(mapbuf)
 	-- mapbuf('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opt)
 	-- mapbuf('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opt)
 	-- mapbuf('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
+
+    -- Terminal 相关
+    mapbuf("n", "<leader>st", ":Lspsaga term_toggle<CR>", opt)
 end
 
 return pluginKeys

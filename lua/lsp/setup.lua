@@ -120,7 +120,8 @@ nvim_lsp.lua_ls.setup({
     end,
     settings = {
         Lua = {}
-    }
+    },
+    on_attach = LspKeybind,
 })
 
 nvim_lsp.gopls.setup({
@@ -145,5 +146,6 @@ nvim_lsp.tsserver.setup({
 })
 
 nvim_lsp.volar.setup{
+  on_attach = LspKeybind,
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
 }

@@ -24,6 +24,7 @@ require("lazy").setup({
     "williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
+    { "nvimdev/lspsaga.nvim", event = "BufEnter" },
     -- 补全
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/vim-vsnip",
