@@ -14,8 +14,8 @@ nvim_tree.setup({
   },
   -- 过滤文件
   filters = {
-    dotfiles = false, -- 隐藏 dotfile
-    custom = { "node_modules" }, -- 隐藏 node_modules 目录
+    dotfiles = false, -- 是否隐藏 dotfile
+    -- custom = { "node_modules" }, -- 隐藏 node_modules 目录
   },
   view = {
     -- 文件浏览器展示位置，左侧：left, 右侧：right
